@@ -1,0 +1,5 @@
+D001|Dr. Mona Youssef|Dermatology|Sun,Mon,Wed|10:00|15:55
+D002|Dr. Khaled Nasser|Cardiology|Mon,Tue,Thu|10:00|16:00
+D003|Dr. Laila Omar|Pediatrics|Sat,Wed,Fri|08:00|14:00
+D004|Dr. Ahmad Zidan|Dermatology|Mon,Thu|11:00|17:00
+D005|Dr. Rania Saleh|Cardiology|Mon,Wed,Fri|09:00|13:00
