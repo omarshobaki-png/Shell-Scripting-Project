@@ -1,31 +1,49 @@
-Project overview:
-This project is about an outpatient reservation system that both the doctors and the patients can use 
-to make the appointments scheduele easier.
+# Outpatient Reservation System (Shell Scripting Project)
 
-How it works:
-The main idea is to have a main menu in main.sh that then either runs patient.sh or admin.sh or exit according
-to the users input.
+Author: Omar Shoubaki  
+Birzeit University  
+Electrical and Computer Engineering Department
 
-The system then reads the user input if he selects patient patient.sh will execute and show the patient menu
-similarly the admin.sh will execute and show the admin menu if the user selects admin
+## Project Overview
+This project is about an outpatient reservation system that both doctors and patients can use to make appointment scheduling easier.
 
-In each of the menus a list is printed to showcase the kind of operations they are eligible to do and when
-the user chooses one of them the script for that operation wiill run.
+## How It Works
+The main idea is to have a main menu in main.sh that either runs patient.sh, admin.sh, or exits according to the user's input.
 
-Examples: 
-For example if the user is a patient he will select one of 5 operations, lets say he chose to register as a 
-new patient. the newpatient script will execute and ask him for the needed info to register and if he chose to
-view his appointments the view appointment.sh script will execute asking him for his Pid to search for his
-appointments and so on
+The system reads the user input and executes the corresponding script.  
+If the user selects patient, patient.sh will execute and show the patient menu.  
+If the user selects admin, admin.sh will execute and show the admin menu.
 
-Same thing can be said about if the user was an admin or a doctor if they chose an operation its script will run
-asking the user for the needed info to execute said operation except for viewing the patient list as its just
-a printing operation no script is needed
+In each menu, a list of available operations is displayed based on the user's role.  
+When the user chooses an operation, the script responsible for that operation runs automatically.
 
-Scripts details:
-In each of the scripts there are comments to explain each script and most details on how we made this system work
-and how we tried to cover most cases to ensure a reliable system
+## Examples
+For example, if the user is a patient, they can choose one of five operations.  
+If the patient chooses to register as a new patient, the newpatient.sh script will execute and ask for the required information to register.  
+If the patient chooses to view their appointments, the viewappointment.sh script will execute and ask for their patient ID (Pid) to display their scheduled appointments.
 
-Execution advice:
-**Before executing unzip the files and make sure that all scripts are executable by using chmod + or chmod 755
-additionally you need to make sure you have permisions to read and write from the .txt files 
+Similarly, if the user is an admin or a doctor, selecting an operation will execute its corresponding script and ask for the required information to perform that action.  
+The only exception is viewing the patient list, which simply prints the list without running a separate script.
+
+## Scripts Details
+Each script includes comments explaining its functionality and design choices.  
+The comments describe how the system handles different cases to ensure reliability and error prevention.
+
+## Execution Advice
+Before executing, unzip all files and ensure that each script is executable by using:
+chmod +x *.sh
+
+nginx
+Copy code
+or
+chmod 755 *.sh
+
+pgsql
+Copy code
+Also, make sure you have permission to read from and write to all .txt files used by the system.
+
+## Purpose
+This project was developed as part of the ENCS3130 Linux Laboratory course.  
+It demonstrates practical understanding of shell scripting, file handling, process execution, and user interaction within a Linux environment.
+
+
