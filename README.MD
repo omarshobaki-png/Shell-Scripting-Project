@@ -1,31 +1,30 @@
-Project overview:
-This project is about an outpatient reservation system that both the doctors and the patients can use 
-to make the appointments scheduele easier.
+# Outpatient Reservation System (Shell Scripting Project)
 
-How it works:
-The main idea is to have a main menu in main.sh that then either runs patient.sh or admin.sh or exit according
-to the users input.
+## Project Overview
+This project is an outpatient reservation system that both doctors and patients can use to make appointment scheduling easier and more organized.
 
-The system then reads the user input if he selects patient patient.sh will execute and show the patient menu
-similarly the admin.sh will execute and show the admin menu if the user selects admin
+## How It Works
+The system begins with a main menu in `main.sh` that allows the user to choose between three options:
+- Run the **Patient Menu**
+- Run the **Admin Menu**
+- Exit the system
 
-In each of the menus a list is printed to showcase the kind of operations they are eligible to do and when
-the user chooses one of them the script for that operation wiill run.
+If the user selects the patient option, `patient.sh` is executed to display the patient menu.  
+If the user selects the admin option, `admin.sh` is executed to display the admin menu.  
+Each menu lists the available operations the user can perform, and when a selection is made, the corresponding script executes.
 
-Examples: 
-For example if the user is a patient he will select one of 5 operations, lets say he chose to register as a 
-new patient. the newpatient script will execute and ask him for the needed info to register and if he chose to
-view his appointments the view appointment.sh script will execute asking him for his Pid to search for his
-appointments and so on
+## Examples
+- If a patient chooses to register as a new patient, the `newpatient.sh` script runs and prompts for registration details.  
+- If a patient chooses to view their appointments, the `viewappointment.sh` script runs and asks for their patient ID to retrieve their scheduled appointments.  
+- For the admin (doctor), similar logic applies: when an operation is selected, its corresponding script runs and requests the necessary information to perform the task.  
+  The only exception is viewing the patient list, which directly prints data without running a separate script.
 
-Same thing can be said about if the user was an admin or a doctor if they chose an operation its script will run
-asking the user for the needed info to execute said operation except for viewing the patient list as its just
-a printing operation no script is needed
+## Script Details
+Each script contains internal comments that explain its purpose and functionality.  
+The scripts are designed to handle most cases to ensure that the system operates reliably.
 
-Scripts details:
-In each of the scripts there are comments to explain each script and most details on how we made this system work
-and how we tried to cover most cases to ensure a reliable system
-
-Execution advice:
-**Before executing unzip the files and make sure that all scripts are executable by using chmod + or chmod 755
-additionally you need to make sure you have permisions to read and write from the .txt files 
+## Execution Advice
+Before running the system:
+1. Unzip all files.
+2. Ensure all scripts are executable by running chmod +x or chmod 755
+3. Make sure you have read and write permissions for all .txt files used by the system.
