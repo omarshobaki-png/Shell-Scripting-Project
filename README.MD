@@ -31,15 +31,7 @@ The comments describe how the system handles different cases to ensure reliabili
 
 ## Execution Advice
 Before executing, unzip all files and ensure that each script is executable by using:
-chmod +x *.sh
-
-nginx
-Copy code
-or
-chmod 755 *.sh
-
-pgsql
-Copy code
+chmod +x or chmod 755
 Also, make sure you have permission to read from and write to all .txt files used by the system.
 
 ## Purpose
